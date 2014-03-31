@@ -1,1 +1,1 @@
-./protected/yiic migrate up --interactive=0
+#./protected/yiic migrate up --interactive=0
