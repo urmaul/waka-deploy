@@ -1,6 +1,6 @@
 # Waka Deploy
 
-A bunch of shell scripts to update php projects with git.
+A bunch of shell scripts to update yii projects with git.
 
 ## Features
 
