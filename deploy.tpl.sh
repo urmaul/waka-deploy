@@ -1,10 +1,4 @@
 #!/bin/bash
-
 dir=$(dirname $0)
 
-sh $dir/check-valid.sh || exit 1
-
-ssh user@serv "
-cd /path/to/app/
-sh ./protected/deploy/update.sh
-"
+sh $dir/run.sh user@host /path/to/app/

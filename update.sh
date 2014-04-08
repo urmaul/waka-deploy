@@ -4,7 +4,9 @@ dir=$(dirname $0)
 
 . $dir/common.sh
 
-sh $dir/check-clean.sh || exit 1
+echo "Checking for unstaged changes...";
+txt=$(git diff --name-only HEAD)
+test -z "$txt" || { printerror "directory has unstaged changes:" "$txt" ; exit 1; }
 
 logstr "Update started at `git rev-parse HEAD`"
 
