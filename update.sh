@@ -9,7 +9,6 @@ sh $dir/check-clean.sh || exit 1
 logstr "Update started at `git rev-parse HEAD`"
 
 git pull
-#sh $appdir/init.sh
-php $appdir/yiic migrate up --interactive=0
+sh $dir/post-update.sh
 
 logstr "Update finished at `git rev-parse HEAD`"
