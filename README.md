@@ -35,4 +35,4 @@ And you can call ``update.sh`` manually on the server
 * **Application directory** - it is stored in ``common.sh`` in var ``appdir``.
 * **Log file path** - it is stored in ``common.sh`` in var `appdir`.
 * **Validations before deploy** - all validations are stored in ``check-valid.sh``.
-* **Commands after deploy** - all commands are stored in ``post-update.sh``.
+* **Commands after deploy** - all commands are stored in ``build.sh``.

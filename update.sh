@@ -11,6 +11,6 @@ test -z "$txt" || { printerror "directory has unstaged changes:" "$txt" ; exit 1
 logstr "Update started at `git rev-parse HEAD`"
 
 git pull
-. $dir/post-update.sh
+. $dir/build.sh
 
 logstr "Update finished at `git rev-parse HEAD`"
