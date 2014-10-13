@@ -1,3 +1,4 @@
-protected/migrations/template.php
+protected/migrations/migration-template.php
 protected/vendors/
 protected/runtime/
+vendor/
